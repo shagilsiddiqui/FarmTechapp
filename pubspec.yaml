@@ -1,0 +1,65 @@
+name: farmtech
+description: A new Flutter project.
+
+
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  line_icons: ^2.0.1
+  intl: ^0.17.0
+  geocoder: ^0.2.1
+  firebase_messaging: ^9.0.1
+  url_launcher: ^6.0.3
+  dio: ^4.0.0
+  shared_preferences: ^2.0.5
+  firebase_auth: ^1.0.1
+  connectivity: ^3.0.3
+  provider: ^5.0.0
+  google_maps_flutter: ^2.0.1
+  google_maps_place_picker: ^2.0.0-nullsafety.3
+  firebase_core: ^1.0.2
+  fluttertoast: ^8.0.3
+  flutter_local_notifications: ^5.0.0+1
+  flat_icons_flutter: ^1.0.2
+  image_picker: ^0.7.3
+  firebase_storage: ^8.0.1
+  path_provider: ^2.0.1
+  image: ^3.0.2
+  uuid: ^3.0.3
+  geocoding: ^2.0.0
+  geolocator: ^7.0.3
+  http: ^0.13.3
+  tflite: ^1.0.5
+  bubble: ^1.1.9+1
+  googleapis_auth:
+  cloud_firestore: "^2.0.0"
+  flutter_webview_plugin: ^0.3.11
+  expandable: ^4.1.4
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/farmtech-fh9j-3db6e0409c71.json
+
+  fonts:
+    - family: Gilroy
+      fonts: 
+        - asset: assets/fonts/Gilroy-ExtraBold.otf
+        #- asset: assets/fonts/Gilroy-Light.otf

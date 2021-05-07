@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "355017837620",
+    "project_id": "farmtech-d76c7",
+    "storage_bucket": "farmtech-d76c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355017837620:android:56d3e1fdd21285fdc34e61",
+        "android_client_info": {
+          "package_name": "com.example.farmtech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355017837620-ds0t13n3hogevp3gml251cv0ik7nighd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtaLEM_bGvtIvTppOWK86tC69gGRjfQQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355017837620-ds0t13n3hogevp3gml251cv0ik7nighd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
