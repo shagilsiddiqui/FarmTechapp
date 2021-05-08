@@ -1,3 +1,4 @@
+import 'package:farmtech/Screens/cattle.dart';
 import 'package:farmtech/Screens/cropDiseaseDetection.dart';
 import 'package:farmtech/Screens/cropRecomendation.dart';
 import 'package:farmtech/Screens/mycrops.dart';
@@ -172,7 +173,13 @@ class _MyFarmScreenState extends State<MyFarmScreen> {
                     ],
                   ),
                   child: FlatButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Cattle()),
+                      );
+                    },
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
