@@ -1,30 +1,16 @@
 import 'package:expansion_card/expansion_card.dart';
 import 'package:flutter/material.dart';
-
-// void main() => runApp(Cattle());
-
-class Cattle extends StatefulWidget {
+import 'package:farmtech/global.dart' as  global;
+class CatteScreen extends StatefulWidget {
   @override
-  _CattleState createState() => _CattleState();
+  _CatteScreenState createState() => _CatteScreenState();
 }
 
-class _CattleState extends State<Cattle> {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(home: MainApp());
-  }
-}
-
-class MainApp extends StatefulWidget {
-  @override
-  _MainAppState createState() => _MainAppState();
-}
-
-class _MainAppState extends State<MainApp> {
+class _CatteScreenState extends State<CatteScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightGreen,
+      backgroundColor:Color(0xffDEF9EF) ,
       appBar: AppBar(
         centerTitle: true,
         toolbarHeight: 70,
@@ -59,6 +45,7 @@ class _MainAppState extends State<MainApp> {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: ExpansionCard(
+                backgroundColor: global.mainColor,
                 borderRadius: 20,
                 background: Image.asset(
                   "assets/cow.gif",
@@ -72,13 +59,13 @@ class _MainAppState extends State<MainApp> {
                         "Gir Cow",
                         style: TextStyle(
                           fontSize: 30,
-                          color: Colors.white,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold
                         ),
                       ),
                       Text(
                         "Gujrat",
-                        style: TextStyle(fontSize: 20, color: Colors.white),
+                        style: TextStyle(fontSize: 20, color: Colors.black),
                       ),
                     ],
                   ),
@@ -87,7 +74,7 @@ class _MainAppState extends State<MainApp> {
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 7),
                     child: Text("Milk yield ranges from 1250 to 1800 kgs per lactation\n Bought at @1.5Lakhs",
-                        style: TextStyle(fontSize: 20, color: Colors.white)),
+                        style: TextStyle(fontSize: 20, color: Colors.black)),
                   )
                 ],
               ),
@@ -98,6 +85,7 @@ class _MainAppState extends State<MainApp> {
             Padding(
               padding: const EdgeInsets.all(0.0),
               child: ExpansionCard(
+                backgroundColor: global.mainColor,
                 borderRadius: 20,
                 background: Image.asset(
                   "assets/goaat.gif",
@@ -111,13 +99,13 @@ class _MainAppState extends State<MainApp> {
                         " pygmy goat ",
                         style: TextStyle(
                           fontSize: 30,
-                          color: Colors.white,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold
                         ),
                       ),
                       Text(
                         "American Breed",
-                        style: TextStyle(fontSize: 20, color: Colors.white),
+                        style: TextStyle(fontSize: 20, color: Colors.black),
                       ),
                     ],
                   ),
@@ -126,7 +114,7 @@ class _MainAppState extends State<MainApp> {
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 7),
                     child: Text("The average daily milk yield in 2.25 to 2.7 kg. The milk yield in a lactation period of, 250 days varies from 250 - 300 kg with 3.5 percent fat content\n Bought at @0.5Lakhs",
-                        style: TextStyle(fontSize: 20, color: Colors.white)),
+                        style: TextStyle(fontSize: 20, color: Colors.black)),
                   )
                 ],
               ),
@@ -137,6 +125,7 @@ class _MainAppState extends State<MainApp> {
             Padding(
               padding: const EdgeInsets.all(0.0),
               child: ExpansionCard(
+                backgroundColor: global.mainColor,
                 borderRadius: 20,
                 background: Image.asset(
                   "assets/tractor.gif",
@@ -150,13 +139,13 @@ class _MainAppState extends State<MainApp> {
                         "Mahindra Tractor",
                         style: TextStyle(
                             fontSize: 30,
-                            color: Colors.white,
+                            color: Colors.black,
                             fontWeight: FontWeight.bold
                         ),
                       ),
                       Text(
                         "Crawler tractor",
-                        style: TextStyle(fontSize: 20, color: Colors.white),
+                        style: TextStyle(fontSize: 20, color: Colors.black),
                       ),
                     ],
                   ),
@@ -165,7 +154,7 @@ class _MainAppState extends State<MainApp> {
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 7),
                     child: Text("Used to plough field during harvesting season\n Bought at @10.5Lakhs",
-                        style: TextStyle(fontSize: 20, color: Colors.white)),
+                        style: TextStyle(fontSize: 20, color: Colors.black)),
                   )
                 ],
               ),

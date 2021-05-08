@@ -26,7 +26,7 @@ class _FinnanceScreenState extends State<FinnanceScreen> {
         elevation: 10,
         title: Row(
           children: [
-            Icon(LineIcons.moneyCheck , color: global.mainColor, size:30),
+            Icon(LineIcons.moneyCheck, color: global.mainColor, size: 30),
             SizedBox(width: 20),
             Text("My Finances")
           ],
@@ -49,25 +49,25 @@ class _FinnanceScreenState extends State<FinnanceScreen> {
               SizedBox(height: 10),
               Container(
                 decoration: BoxDecoration(
-                gradient: new LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    const Color(0xff25C585),
-                    const Color(0xff0e4e35),
+                  gradient: new LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      const Color(0xff25C585),
+                      const Color(0xff0e4e35),
+                    ],
+                  ),
+                  //color: global.mainColor,
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey[500],
+                      blurRadius: 6.0,
+                      spreadRadius: .05, //extend the shadow
+                      offset: Offset(0.0, 1.0),
+                    )
                   ],
                 ),
-                //color: global.mainColor,
-                borderRadius: BorderRadius.all(Radius.circular(15)),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey[500],
-                    blurRadius: 6.0,
-                    spreadRadius: .05, //extend the shadow
-                    offset: Offset(0.0, 1.0),
-                  )
-                ],
-              ),
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Column(
@@ -182,7 +182,7 @@ class _FinnanceScreenState extends State<FinnanceScreen> {
                               height: 50, width: 1, color: Colors.black26),
                           Column(
                             children: [
-                              Text("1,60,000 kg",
+                              Text("160 Tons",
                                   style: TextStyle(
                                       fontSize: 20, color: Colors.white)),
                               SizedBox(height: 5),
@@ -254,6 +254,11 @@ class _FinnanceScreenState extends State<FinnanceScreen> {
               ),
               SizedBox(height: 10),
               Divider(),
+              SizedBox(height: 10),
+              Text(
+                "Mandi Prices",
+                style: TextStyle(fontSize: 30, color: global.mainColor),
+              ),
               SizedBox(height: 10),
               FutureBuilder(
                   future: CropPrice().fetchCropsData(),

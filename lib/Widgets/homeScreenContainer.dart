@@ -16,8 +16,8 @@ class _HomeScreenContainerState extends State<HomeScreenContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 130.0,
-      width: 130.0,
+      height: 160.0,
+      width: 160.0,
       decoration: BoxDecoration(
         borderRadius: widget.number == 1
             ? BorderRadius.only(
@@ -76,7 +76,8 @@ class _HomeScreenContainerState extends State<HomeScreenContainer> {
                   Image.asset(
                     './assets/crop.png',
                   ),
-                  Text("My Farm")
+                  Text("My Farm" , textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 20))
                 ],
               )
             : widget.number == 2
@@ -88,7 +89,8 @@ class _HomeScreenContainerState extends State<HomeScreenContainer> {
                       Image.asset(
                         './assets/shop.jpeg',
                       ),
-                      Text("Shop")
+                      Text("Shop" ,textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 20))
                     ],
                   )
                 : widget.number == 3
@@ -100,7 +102,8 @@ class _HomeScreenContainerState extends State<HomeScreenContainer> {
                           Image.asset(
                             './assets/money.png',
                           ),
-                          Text("Finance")
+                          Text("My Finance" , textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 20))
                         ],
                       )
                     : Column(
@@ -111,7 +114,8 @@ class _HomeScreenContainerState extends State<HomeScreenContainer> {
                           Image.asset(
                             './assets/resources.png',
                           ),
-                          Text("Resources")
+                          Text("Resources" , textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 20))
                         ],
                       ),
       ),

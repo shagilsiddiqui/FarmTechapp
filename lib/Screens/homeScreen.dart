@@ -80,13 +80,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                       SizedBox(
-                        height: 100,
+                        height: 140,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            height: MediaQuery.of(context).size.height - 3.32*MediaQuery.of(context).size.height * .16,
+                            height: MediaQuery.of(context).size.height - 4 * MediaQuery.of(context).size.height * .16,
                             width: MediaQuery.of(context).size.width * .42,
                             decoration: BoxDecoration(
                                 color: Color(0xff25C585),
@@ -96,116 +96,82 @@ class _HomeScreenState extends State<HomeScreen> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  (snapshot.data.main.tempMax - 273.15)
-                                          .toInt()
-                                          .toString() +
-                                      '°' +
-                                      'C',
+                                  "Your Crop Prices",
+                                  textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 35,
+                                      fontSize: 30,
                                       fontWeight: FontWeight.w500),
-                                ),
-                                Text(
-                                  "Max",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                  ),
                                 ),
                                 SizedBox(height: 20),
                                 Text(
-                                  (snapshot.data.main.tempMin - 273.15)
-                                          .toInt()
-                                          .toString() +
-                                      '°' +
-                                      'C',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 35,
-                                      fontWeight: FontWeight.w500),
-                                ),
-                                Text(
-                                  "Min",
+                                  "Tomato: ₹ 550",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
                                   ),
-                                )
+                                ),
+                                SizedBox(height: 10),
+                                Text(
+                                  "Dhan: ₹ 1800",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                                Text(
+                                  "Potato: ₹ 945.00",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
                           Container(
-                            height: MediaQuery.of(context).size.height - 3.32*MediaQuery.of(context).size.height * .16,
+                            height: MediaQuery.of(context).size.height - 4*MediaQuery.of(context).size.height * .16,
                             width: MediaQuery.of(context).size.width * .42,
                             decoration: BoxDecoration(
                                 color: Color(0xff228E64),
                                 borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(40))),
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    CircleAvatar(
-                                      backgroundColor: Colors.blue[300],
-                                      child: Icon(
-                                        FlatIcons.cloud,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Text(
-                                      snapshot.data.clouds.all.toString() + "%",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                      ),
-                                    )
-                                  ],
+                                Text(
+                                  "Major Task",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 30,
+                                      fontWeight: FontWeight.w500),
                                 ),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    CircleAvatar(
-                                      backgroundColor: Colors.blueGrey,
-                                      child: Icon(
-                                        LineIcons.water,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Text(
-                                      snapshot.data.main.humidity.toString() +
-                                          "%",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                      ),
-                                    )
-                                  ],
+                                SizedBox(height: 20),
+                                Text(
+                                  "Pest",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                  ),
                                 ),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    CircleAvatar(
-                                      backgroundColor: Colors.greenAccent,
-                                      child: Icon(
-                                        FlatIcons.cloud,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Text(
-                                      snapshot.data.wind.speed.toString() +
-                                          " Km/hr",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                      ),
-                                    )
-                                  ],
+                                SizedBox(height: 10),
+                                Text(
+                                  "Rent Tractor",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                                Text(
+                                  "Learnig about seeds",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                  ),
                                 ),
                               ],
                             ),
@@ -215,7 +181,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                   Positioned(
-                    top: MediaQuery.of(context).size.height * .16,
+                    top: MediaQuery.of(context).size.height * .18,
                     right: MediaQuery.of(context).size.width * .45,
                     child: CircleAvatar(
                       backgroundColor: global.yellowCustom,

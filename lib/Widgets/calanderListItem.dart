@@ -9,6 +9,7 @@ Widget calenderListItem(BuildContext context,
     String subtitle,
     String date,
     String imageUrl,
+    bool currentstage , 
     String link}) {
   return Container(
     margin: const EdgeInsets.only(
@@ -21,6 +22,7 @@ Widget calenderListItem(BuildContext context,
       horizontal: 10,
     ),
     decoration: BoxDecoration(
+
         boxShadow: [
           BoxShadow(
             color: Colors.grey[350],
@@ -28,7 +30,7 @@ Widget calenderListItem(BuildContext context,
             spreadRadius: 0.02,
           ),
         ],
-        color: Colors.white,
+        color: currentstage == true ?  Colors.green : Colors.white ,
         borderRadius: BorderRadius.circular(15),
         border: Border.all(
           color: Colors.black.withOpacity(0.2),
@@ -41,7 +43,7 @@ Widget calenderListItem(BuildContext context,
             topLeft: Radius.circular(15),
             topRight: Radius.circular(15),
           ),
-          child: Image.network(
+          child: Image.asset(
             imageUrl,
             fit: BoxFit.cover,
             height: 200,

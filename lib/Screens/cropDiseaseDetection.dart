@@ -1,6 +1,6 @@
 import 'dart:developer';
 import 'dart:io';
-
+import 'package:farmtech/global.dart' as global;
 import 'package:farmtech/Models/diesase.dart';
 import 'package:farmtech/Widgets/CustomDialog.dart';
 import 'package:flutter/material.dart';
@@ -166,7 +166,7 @@ class _CropDiseaseDetectionState extends State<CropDiseaseDetection> {
         elevation: 10,
         title: Row(
           children: [
-            Icon(LineIcons.doctor),
+            Icon(LineIcons.doctor , size: 30, color: global.mainColor,),
             SizedBox(width: 20),
             Text("Check Crop Health")
           ],
@@ -195,7 +195,8 @@ class _CropDiseaseDetectionState extends State<CropDiseaseDetection> {
         child: Column(
           children: [
             Text(
-                "Using our hyper tuned models we will ...... kuch bc , likhna"),
+                "With Help of our hyper tunned Deeep learning models detect each very disease causing a harm to you crop, hence affecting ypur profits" , style: TextStyle(color:global.mainColor),),
+                SizedBox(height:20),
             _image == null
                 ? Padding(
                     padding: const EdgeInsets.all(8.0),

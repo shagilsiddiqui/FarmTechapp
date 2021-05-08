@@ -62,9 +62,7 @@ class _ShopScreenState extends State<ShopScreen> {
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [
+          child: 
               StreamBuilder<QuerySnapshot>(
                   stream: DatabaseService().shop.snapshots(),
                   builder:
@@ -98,8 +96,7 @@ class _ShopScreenState extends State<ShopScreen> {
                       return Center(child: CircularProgressIndicator());
                     }
                   }),
-            ],
-          ),
+            
         ));
   }
 }

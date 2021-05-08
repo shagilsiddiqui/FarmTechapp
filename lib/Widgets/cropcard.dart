@@ -49,8 +49,8 @@ class CropCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text('Min Price' '₹ ' + crop.minPrice),
-                Text('Min Price' '₹ ' + crop.modalPrice),
-                Text('Min Price' '₹ ' + crop.maxPrice),
+                Text('Modal Price' '₹ ' + crop.modalPrice),
+                Text('Max Price' '₹ ' + crop.maxPrice),
               ],
             )
           ],

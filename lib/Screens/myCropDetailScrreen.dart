@@ -1,8 +1,10 @@
+import 'package:farmtech/Screens/calenderScreen.dart';
 import 'package:farmtech/Screens/fetilizerRecomndationScreen.dart';
 import 'package:farmtech/Services/databaseService.dart';
 import 'package:flutter/material.dart';
 import 'package:farmtech/global.dart' as global;
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:intl/intl.dart';
 
 class MyCropDetailsScreen extends StatefulWidget {
   final String id;
@@ -61,7 +63,8 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                           height: 150,
                           width: 300,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.all(Radius.circular(40)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(40)),
                               border: Border.all(color: global.yellowCustom),
                               color: Colors.white),
                           child: Image.network(
@@ -78,14 +81,14 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                             children: [
                               Text(
                                 cropDoc['name'],
-                                style:
-                                    TextStyle(fontSize: 30, color: Colors.white),
+                                style: TextStyle(
+                                    fontSize: 30, color: Colors.white),
                               ),
                               SizedBox(height: 10),
                               Text(
                                 "Crop Name",
-                                style:
-                                    TextStyle(fontSize: 15, color: Colors.white),
+                                style: TextStyle(
+                                    fontSize: 15, color: Colors.white),
                               ),
                               SizedBox(height: 10),
                               Divider(
@@ -93,13 +96,15 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                               ),
                               SizedBox(height: 10),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Column(
                                     children: [
                                       Text(cropDoc['seedtype'],
                                           style: TextStyle(
-                                              fontSize: 20, color: Colors.white)),
+                                              fontSize: 20,
+                                              color: Colors.white)),
                                       SizedBox(height: 5),
                                       Text(
                                         "Seed Type",
@@ -109,12 +114,17 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                                     ],
                                   ),
                                   Container(
-                                      height: 50, width: 1, color: Colors.black26),
+                                      height: 50,
+                                      width: 1,
+                                      color: Colors.black26),
                                   Column(
                                     children: [
-                                      Text(global.stages[cropDoc['currentState']],
+                                      Text(
+                                          global
+                                              .stages[cropDoc['currentState']],
                                           style: TextStyle(
-                                              fontSize: 20, color: Colors.white)),
+                                              fontSize: 20,
+                                              color: Colors.white)),
                                       SizedBox(height: 5),
                                       Text(
                                         "Current State",
@@ -131,13 +141,15 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                               ),
                               SizedBox(height: 10),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Column(
                                     children: [
                                       Text(cropDoc['startDate'],
                                           style: TextStyle(
-                                              fontSize: 20, color: Colors.white)),
+                                              fontSize: 20,
+                                              color: Colors.white)),
                                       SizedBox(height: 5),
                                       Text(
                                         "Start Date",
@@ -146,13 +158,16 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                                       ),
                                     ],
                                   ),
-                                   Container(
-                                      height: 50, width: 1, color: Colors.black26),
+                                  Container(
+                                      height: 50,
+                                      width: 1,
+                                      color: Colors.black26),
                                   Column(
                                     children: [
                                       Text(cropDoc['harvestDate'],
                                           style: TextStyle(
-                                              fontSize: 20, color: Colors.white)),
+                                              fontSize: 20,
+                                              color: Colors.white)),
                                       SizedBox(height: 5),
                                       Text(
                                         "Harvest Date",
@@ -169,13 +184,15 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                               ),
                               SizedBox(height: 10),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Column(
                                     children: [
                                       Text(cropDoc['area'] + " Hectare",
                                           style: TextStyle(
-                                              fontSize: 20, color: Colors.white)),
+                                              fontSize: 20,
+                                              color: Colors.white)),
                                       SizedBox(height: 5),
                                       Text(
                                         "Area Coverted",
@@ -184,13 +201,16 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                                       ),
                                     ],
                                   ),
-                                   Container(
-                                      height: 50, width: 1, color: Colors.black26),
+                                  Container(
+                                      height: 50,
+                                      width: 1,
+                                      color: Colors.black26),
                                   Column(
                                     children: [
                                       Text(cropDoc['Expected Quantity'],
                                           style: TextStyle(
-                                              fontSize: 20, color: Colors.white)),
+                                              fontSize: 20,
+                                              color: Colors.white)),
                                       SizedBox(height: 5),
                                       Text(
                                         "Expected Quantity",
@@ -199,13 +219,16 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                                       ),
                                     ],
                                   ),
-                                   Container(
-                                      height: 50, width: 1, color: Colors.black26),
+                                  Container(
+                                      height: 50,
+                                      width: 1,
+                                      color: Colors.black26),
                                   Column(
                                     children: [
                                       Text(cropDoc['Market Value'],
                                           style: TextStyle(
-                                              fontSize: 20, color: Colors.white)),
+                                              fontSize: 20,
+                                              color: Colors.white)),
                                       SizedBox(height: 5),
                                       Text(
                                         "Market Value",
@@ -222,13 +245,15 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                               ),
                               SizedBox(height: 10),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Column(
                                     children: [
                                       Text(cropDoc['presticide'],
                                           style: TextStyle(
-                                              fontSize: 20, color: Colors.white)),
+                                              fontSize: 20,
+                                              color: Colors.white)),
                                       SizedBox(height: 5),
                                       Text(
                                         "Presticide",
@@ -237,13 +262,16 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                                       ),
                                     ],
                                   ),
-                                   Container(
-                                      height: 50, width: 1, color: Colors.black26),
+                                  Container(
+                                      height: 50,
+                                      width: 1,
+                                      color: Colors.black26),
                                   Column(
                                     children: [
                                       Text(cropDoc['Fertilizer'],
                                           style: TextStyle(
-                                              fontSize: 20, color: Colors.white)),
+                                              fontSize: 20,
+                                              color: Colors.white)),
                                       SizedBox(height: 5),
                                       Text(
                                         "Fertilizer",
@@ -259,39 +287,65 @@ class _MyCropDetailsScreenState extends State<MyCropDetailsScreen> {
                         ),
                       ),
                       SizedBox(
-                      width: double.infinity,
-                      child: RaisedButton(
-                        color: Colors.white,
-                        onPressed: () {
-                          Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => FertilzerRecomedationScreen(
-                              cropname : cropDoc['name'],
-                              id :cropDoc['id']
-                            )),
-                      );
-                        },
-                        textColor: global.mainColor,
-                        child: Text("Get Fertilizer Recommedations".toUpperCase(),
-                            style: TextStyle(
-                                fontSize: 14, fontWeight: FontWeight.bold)),
-                      )),
+                          width: double.infinity,
+                          child: RaisedButton(
+                            color: Colors.white,
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        FertilzerRecomedationScreen(
+                                            cropname: cropDoc['name'],
+                                            id: cropDoc['id'])),
+                              );
+                            },
+                            textColor: global.mainColor,
+                            child: Text(
+                                "Get Fertilizer Recommedations".toUpperCase(),
+                                style: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.bold)),
+                          )),
                       SizedBox(
-                      width: double.infinity,
-                      child: RaisedButton(
-                        color: Colors.white,
-                        onPressed: () {
-                          int nextstage = cropDoc['currentState'] +1;
-                          var data = { "currentState" :nextstage };
-                          DatabaseService().updateCropdata(data, cropDoc['id']);
-                          Fluttertoast.showToast(msg: "Move to Next Stage!!");
-                        },
-                        textColor: global.mainColor,
-                        child: Text("Move to next Stage".toUpperCase(),
-                            style: TextStyle(
-                                fontSize: 14, fontWeight: FontWeight.bold)),
-                      ))
+                          width: double.infinity,
+                          child: RaisedButton(
+                            color: Colors.white,
+                            onPressed: () {
+                              int nextstage = cropDoc['currentState'] + 1;
+                              var data = {"currentState": nextstage};
+                              DatabaseService()
+                                  .updateCropdata(data, cropDoc['id']);
+                              Fluttertoast.showToast(
+                                  msg: "Move to Next Stage!!");
+                            },
+                            textColor: global.mainColor,
+                            child: Text("Move to next Stage".toUpperCase(),
+                                style: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.bold)),
+                          )),
+                      SizedBox(
+                          width: double.infinity,
+                          child: RaisedButton(
+                            color: Colors.white,
+                            onPressed: () {
+                              int currentState = cropDoc['currentState'];
+                              DateTime dateTime =
+                                  DateFormat("dd-MM-yyyy").parse(cropDoc['startDate']);
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => CalendarScreen(
+                                          crop: cropDoc['name'],
+                                          stage: currentState,
+                                          date: dateTime,
+                                        )),
+                              );
+                            },
+                            textColor: global.mainColor,
+                            child: Text("View in Calendar".toUpperCase(),
+                                style: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.bold)),
+                          ))
                     ],
                   ),
                 ),

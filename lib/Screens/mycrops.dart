@@ -41,7 +41,7 @@ class _MyCropScreenState extends State<MyCropScreen> {
             color: Colors.grey[700],
             size: 30,
           ),
-          SizedBox(width: 40),
+          SizedBox(width: 20),
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -63,11 +63,14 @@ class _MyCropScreenState extends State<MyCropScreen> {
               return ListView(
                 children: snapshot.data.docs.map(
                    (DocumentSnapshot document){
-                     return MyCropCard(
-                       itemName:  document['name'],
-                       itemId: document['id'],
-                       imageurl: document['image'],
-                       stage: document['currentState'],
+                     return Padding(
+                       padding: const EdgeInsets.all(8.0),
+                       child: MyCropCard(
+                         itemName:  document['name'],
+                         itemId: document['id'],
+                         imageurl: document['image'],
+                         stage: document['currentState'],
+                       ),
                      );
                    }
                 ).toList()
