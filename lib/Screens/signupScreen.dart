@@ -166,10 +166,7 @@ class _SignupScreenState extends State<SignupScreen> {
               child: Container(
                 height: 80.0,
                 width: 80.0,
-                child: Image.asset(
-                  'assets/mainlogo.png',
-                  fit: BoxFit.cover,
-                ),
+                
               ),
             ),
             Align(

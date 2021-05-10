@@ -330,7 +330,7 @@ class _MyFarmScreenState extends State<MyFarmScreen> {
                                             mainAxisSize: MainAxisSize.min,
                                             children: <Widget>[
                                               Image.network(
-                                                'http://openweathermap.org/img/wn/' +
+                                                'https://openweathermap.org/img/wn/' +
                                                     snapshot
                                                         .data.weather[0].icon +
                                                     '.png',
