@@ -1,3 +1,4 @@
+import 'package:farmtech/Screens/paymentscreen.dart';
 import 'package:flat_icons_flutter/flat_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
@@ -139,7 +140,10 @@ class _ShoppingCardState extends State<ShoppingCard> {
               child: RaisedButton(
                 color: global.mainColor,
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => PaymentScreen()),
+                  );
                 },
                 textColor: Colors.white,
                 child: Text("Make Payment".toUpperCase(),

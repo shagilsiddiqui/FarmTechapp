@@ -45,6 +45,7 @@ class _MyCropScreenState extends State<MyCropScreen> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: global.yellowCustom,
         onPressed: () {
           Navigator.push(
                         context,

@@ -384,6 +384,10 @@ PODS:
   - "permission_handler (5.1.0+2)":
     - Flutter
   - PromisesObjC (1.2.12)
+  - razorpay-pod (1.1.12)
+  - razorpay_flutter (1.1.10):
+    - Flutter
+    - razorpay-pod
   - Reachability (3.2)
   - shared_preferences (0.0.1):
     - Flutter
@@ -414,6 +418,7 @@ DEPENDENCIES:
   - package_info (from `.symlinks/plugins/package_info/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+  - razorpay_flutter (from `.symlinks/plugins/razorpay_flutter/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
   - tflite (from `.symlinks/plugins/tflite/ios`)
   - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
@@ -440,6 +445,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - razorpay-pod
     - Reachability
     - TensorFlowLiteC
     - Toast
@@ -481,6 +487,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/path_provider/ios"
   permission_handler:
     :path: ".symlinks/plugins/permission_handler/ios"
+  razorpay_flutter:
+    :path: ".symlinks/plugins/razorpay_flutter/ios"
   shared_preferences:
     :path: ".symlinks/plugins/shared_preferences/ios"
   tflite:
@@ -527,6 +535,8 @@ SPEC CHECKSUMS:
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
   permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  razorpay-pod: e2e8cf25aea59eef51c6851716f188df71adab86
+  razorpay_flutter: 84b3bfd206ae9c9c2a9ba585524a1b3d8102b6c1
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
   TensorFlowLiteC: b3ab9e867b0b71052ca102a32a786555b330b02e

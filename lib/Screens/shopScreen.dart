@@ -52,6 +52,7 @@ class _ShopScreenState extends State<ShopScreen> {
           ],
         ),
         floatingActionButton: FloatingActionButton(
+          backgroundColor: global.yellowCustom,
           onPressed: () {
             Navigator.push(
               context,
@@ -61,7 +62,7 @@ class _ShopScreenState extends State<ShopScreen> {
           child: Icon(Icons.add, color: Colors.white),
         ),
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(4.0),
           child: 
               StreamBuilder<QuerySnapshot>(
                   stream: DatabaseService().shop.snapshots(),

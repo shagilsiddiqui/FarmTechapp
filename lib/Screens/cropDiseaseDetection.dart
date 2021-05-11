@@ -182,6 +182,7 @@ class _CropDiseaseDetectionState extends State<CropDiseaseDetection> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
+        backgroundColor: global.yellowCustom,
         child: Icon(
           LineIcons.camera,
           color: Colors.white,
