@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://flutter.io/">
-    <img src=https://previews.123rf.com/images/findriyani/findriyani1811/findriyani181102332/112923634-wheat-rice-agriculture-logo-vector-template.jpg" alt="Logo" width=82 height=82>
+    <img src="https://previews.123rf.com/images/findriyani/findriyani1811/findriyani181102332/112923634-wheat-rice-agriculture-logo-vector-template.jpg" alt="Logo" width=82 height=82>
   </a>
 
   <h3 align="center">FarmTech App</h3>
