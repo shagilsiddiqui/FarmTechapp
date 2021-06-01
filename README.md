@@ -20,7 +20,7 @@
 ## Table of contents
 
 - [Quick start](#quick-start)
-- [Screenshot](#Screenshot)                                                                         
+- [Screenshot](#Screenshots)                                                                         
 - [What's included](#whats-included)
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Contributing](#contributing)
