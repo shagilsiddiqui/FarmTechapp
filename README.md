@@ -19,7 +19,8 @@
 
 ## Table of contents
 
-- [Quick start](#quick-start)                                                                         
+- [Quick start](#quick-start)
+- [Screenshot](#Screenshot)                                                                         
 - [What's included](#whats-included)
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Contributing](#contributing)
