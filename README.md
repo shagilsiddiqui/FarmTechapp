@@ -4,91 +4,106 @@
   </a>
 
   <h3 align="center">FarmTech App</h3>
-
-  <p align="center">
-    A complete agricluture app for all your needs
-    <br>
-    Base project made with much  :heart: . Contains CRUD, patterns, and much more!
-    <br>
-    <br>
-    <a href="https://github.com/Ismaestro/flutter-example-app/issues/new">Report bug</a>
-    ·
-    <a href="https://github.com/Ismaestro/flutter-example-app/issues/new">Request feature</a>
   </p>
+<p align="center">
+  <a href="https://github.com/shagilsiddiqui/FarmTechapp/actions?query=workflow%3A%22Flutter+CI%22">
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/ShivamGoyal1899/EasyWeather/Flutter CI?label=Flutter%20CI&logo=GitHub&style=for-the-badge">
+</a>
+  <a href="https://github.com/shagilsiddiqui/FarmTechapp/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/ShivamGoyal1899/EasyWeather?style=for-the-badge" alt="EasyWeather is released under the GNU General Public License." />
+  </a>
+  <a href="https://github.com/ShivamGoyal1899/EasyWeather/releases">
+    <img src="https://img.shields.io/github/v/release/ShivamGoyal1899/EasyWeather?include_prereleases&style=for-the-badge" alt="Latest Version Available." />
+  </a>
+  <a href="https://github.com/ShivamGoyal1899/EasyWeather/archive/master.zip">
+    <img src="https://img.shields.io/github/repo-size/ShivamGoyal1899/EasyWeather?style=for-the-badge" alt="GitHub Repository size." />
+  </a>
+  <a href="https://github.com/ShivamGoyal1899/EasyWeather/releases">
+    <img src="https://img.shields.io/github/downloads/ShivamGoyal1899/EasyWeather/total?style=for-the-badge" alt="Total downloads on GitHub." />
+  </a>
+</p>
+<p align="center">
+  Welcome to farmtech, your one stop farming solution, with farmtech you can monitor and control each and every part of your farm and build an agriculture empire. Be it the next crop , current crop,rent out a tractor , buying a combiner or monitoring your finance, you name it.
+
+It is straightforward and designed with immense care given to its user friendliness, behind the beautifully crafted application is a series of sophisticated machine learning algorithms and high availability backend.
+.
+</p>
+<p align="center">
+Show some love 💜 and Star ⭐️ the Repository to support the project.
 </p>
 
-## Table of contents
+## :bookmark_tabs: What’s In This Document
 
-- [Quick start](#quick-start)
-- [Screenshot](#Screenshots)                                                                         
-- [What's included](#whats-included)
-- [Bugs and feature requests](#bugs-and-feature-requests)
-- [Contributing](#contributing)
-- [Creators](#creators)
-- [Thanks](#thanks)
-- [Copyright and license](#copyright-and-license)
+- [Get Up and Running in 5 Minutes](#rocket-get-up-and-running-in-5-minutes)
+- [Flutter / Dart Packages Used](#ballot_box-flutter--dart-packages-used)
+- Screenshots(#Screenshots)
+- [Versioning](#label-versioning)
+- [Queries / Bugs](#question-queries--bugs)
+- [License](#memo-license)
+- [Thanks to Contributors and Sponsors](#purple_heart-thanks)
 
-## Quick start
+## :rocket: Get Up and Running in 5 Minutes
 
-This is a normal flutter app. You should follow the instructions in the [official documentation](https://flutter.io/docs/get-started/install).
+You can get the FarmTechapp up and running on your local dev environment in 5 minutes with these four steps:
 
-## What's included
+1. **Install the Flutter SDK & Android Studio. [Instructions](https://medium.com/enappd/install-flutter-on-windows-and-mac-1fd1dde453ba).**
 
-* CRUD: create, update and remove heroes with Firebase!
-* Search bar, to look for heroes
-* Internationalization 
-* Responsive layout
-* [Sentry](https://sentry.io)! (logs any error in the app)
-* Google Tag Manager
-* Unit tests including code coverage
-* Integration tests
-* CI with Travis
-* Changelog generation
-* Following the [best practices](https://angular.io/guide/styleguide)!
+2. **Open Terminal & navigate to the root directory of the project.**
 
-### Firebase
+    ```shell
+    cd FarmTechapp
+    ```
 
-This repo is using Firebase. We use Cloud Firestore and Cloud Storage to handle CRUD operations over the heroes and to store their images.
+3. **Run and launch the build on preferred device.**
 
-### Travis CI
+   ```shell
+   flutter run
+   ```
 
-We use Travis CI to run this tasks in order:
-* Linter
-* Tests
-* Build for production
+4. **Open the source code and start editing!**
+
+   Your app is now running on your physical device or emulator. Open the `lib` directory in Android Studio itself and edit `*.dart` files. Hot Reload your changes, and the app will update in real time!
+
+At this point, you’ve got the fully functional FarmTechapp App running. For additional information on how you can customize your Flutter Apps, see [Google Codelabs](https://codelabs.developers.google.com/codelabs/flutter/) and [HackerNoon Guide](https://hackernoon.com/making-the-most-of-flutter-from-basics-to-customization-433171581d01).
+
+## :ballot_box: Flutter / Dart Packages Used
+|    Package Name  	| Package Version 	|                           Package URL                          	|    Package Name      	| Package Version 	|                           Package URL                          	|
+|:----------------:	|:-------: |:-----------------------------------------------------------: |:-----------------: |:-----:	|:--------------------------------------------------------------:	|
+| cupertino_icons  	| 0.1.2    | [Open on pub.dev](https://pub.dev/packages/cupertino_icons)  | intl               | 0.16.1 | [Open on pub.dev](https://pub.dev/packages/intl)              	|
+| geolocator      	| 5.3.1    | [Open on pub.dev](https://pub.dev/packages/geolocator)       | share              | 0.6.4  | [Open on pub.dev](https://pub.dev/packages/share)  |
+| http             	| 0.12.0+4 | [Open on pub.dev](https://pub.dev/packages/http)             | url_launcher       | 5.4.5  | [Open on pub.dev](https://pub.dev/packages/url_launcher)        |
+
+## :label: Versioning
+I've used [Semantic Versioning 2.0.0](https://semver.org/) for versioning throughout the project.
 ## Screenshots
-  <p align="center">                                                                   
- <img src="images/Merged_document.jpg" width=600 height=800>
-<img src="images/Merged_document%20(1).jpg" width=600 height=800>
-                                           </p>
-## Bugs and feature requests
+<p align="center">                                                                   
+ <img src="image/Screenshot%202021-06-01%20at%207.04.15%20PM.png" width=200 height=400>
+<img src="image/Screenshot%202021-06-01%20at%207.04.26%20PM.png" width=200 height=400>
+  <img src="image/Screenshot%202021-06-01%20at%208.07.31%20PM.png" width=200 height=400>
+   <img src="image/Screenshot%202021-06-01%20at%208.08.06%20PM.png" width=200 height=400>
+   <img src="image/Screenshot%202021-06-01%20at%208.11.04%20PM.png" width=200 height=400>
+   <img src="image/Screenshot%202021-06-01%20at%208.11.59%20PM.png" width=200 height=400>
+  
+ </p>
+## :question: Queries / Bugs
+If you got any queries or found a bug, open an [Issue](https://github.com/shagilsiddiqui/FarmTechapp/issues/new) or ping me over on(mailto:shagil.aryan@gmail.com)
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Ismaestro/flutter-example-app/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Ismaestro/flutter-example-app/issues/new).
+## :memo: License
+Licensed under the [MIT License](./LICENSE).
 
-## Contributing
-
-Please read through our [contributing guidelines](https://github.com/Ismaestro/flutter-example-app/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
-Moreover, all HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Ismael Ramos](https://github.com/ismaestro).
-
-Editor preferences are available in the [editor config](https://github.com/Ismaestro/flutter-example-app/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
-
-## Creators
-
-**Shagil Siddiqui and Sidhant Goyal**
-
-- <https://github.com/shagilsiddiqui>
-
-<a href='https://ko-fi.com/S6S5LMVR' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-
-## Thanks
-
-Thanks to all contributors and their support:
-
-## Copyright and license
-
-Code and documentation copyright 2018 the authors. Code released under the [MIT License](https://github.com/Ismaestro/flutter-example-app/blob/master/LICENSE).
-
-Enjoy :metal:
-
-
+## :purple_heart: Thanks
+Thanks to all contributors and to sponsors for supporting the project.
+<p>
+  <a href="https://www.buymeacoffee.com/ShivamGoyal" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="30">
+  </a>
+  <a href="https://www.patreon.com/bePatron?u=31786845" target="_blank">
+    <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="30">
+  </a>
+  <a href="https://www.paypal.me/shivamgoyal1899" target="_blank">
+    <img src="https://www.paypalobjects.com/webstatic/en_AU/i/buttons/btn_paywith_primary_l.png" alt="Pay with PayPal!" height="30">
+  </a>
+  <a href="https://opencollective.com/shivamgoyal" target="_blank">
+    <img src="https://opencollective.com/webpack/donate/button@2x.png?color=blue" height="30">
+  </a>
+</p>
